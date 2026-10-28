@@ -22,14 +22,8 @@ RUN apt-get update && apt-get install -y \
     xterm \
     xfonts-base \
     fonts-dejavu-core \
-    feh \
-    xpdf \
-    vim \
-    nano \
     python3 \
-    nodejs \
-    gcc \
-    openssh-client \
+    emcc \
     && rm -rf /var/lib/apt/lists/*
 
 
