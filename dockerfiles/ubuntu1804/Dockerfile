@@ -4,8 +4,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 
 RUN sed -i \
-    -e 's|http://archive.ubuntu.com/ubuntu|http://old-releases.ubuntu.com/ubuntu|g' \
-    -e 's|http://security.ubuntu.com/ubuntu|http://old-releases.ubuntu.com/ubuntu|g' \
+    -e 's|http://archive.ubuntu.com/ubuntu|http://old-releases.archive.ubuntu.com/ubuntu|g' \
+    -e 's|http://security.ubuntu.com/ubuntu|http://old-releases.archive.ubuntu.com/ubuntu|g' \
+    -e 's|http://ports.ubuntu.com/ubuntu-ports|http://old-releases.archive.ubuntu.com/ubuntu|g' \
     /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
