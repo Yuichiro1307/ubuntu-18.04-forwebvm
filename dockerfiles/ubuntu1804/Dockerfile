@@ -23,7 +23,6 @@ RUN apt-get update && apt-get install -y \
     xfonts-base \
     fonts-dejavu-core \
     python3 \
-    emcc \
     && rm -rf /var/lib/apt/lists/*
 
 
